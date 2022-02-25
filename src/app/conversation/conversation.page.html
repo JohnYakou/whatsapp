@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- Bouton de retour -->
+      <ion-back-button text="retour"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title
+      >Finn<br />
+      <div class="status">En ligne</div></ion-title
+    >
+
+    <ion-avatar slot="end">
+      <img src="assets/assets/avatar-finn.png" />
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="bg"></div>
+
+  <!-- Une bulle de conversation droite -->
+  <ion-item lines="none">
+    <ion-badge color="success" slot="end">
+      Hey bien et toi ?
+      <ion-note color="medium"
+        >21:16<ion-icon name="done-all"></ion-icon
+      ></ion-note>
+    </ion-badge>
+  </ion-item>
+
+  <!-- Une bulle de conversation gauche -->
+  <ion-item lines="none">
+    <ion-badge color="primary" slot="start">
+      Oui
+      <ion-note color="medium"
+        >21:18<ion-icon name="done-all"></ion-icon
+      ></ion-note>
+    </ion-badge>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- carre dans lequel se trouve le bouton haut -->
+      <ion-button fill="outline" shape="round" size="small">
+        <ion-icon slot="icon-only" name="chevron-up"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-input placeholder="Votre message"></ion-input>
+
+    <ion-buttons slot="end">
+      <ion-button color="primary">Envoyer</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
